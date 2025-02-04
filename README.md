@@ -1,6 +1,6 @@
 # EngWeb2025
 
-![José Soares](josesoares.png)  
+![José Soares](josesoares.jpg)  
 
 ## Identificação  
 - **Nome:** José António Costa Soares
