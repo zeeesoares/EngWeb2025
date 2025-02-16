@@ -10,7 +10,7 @@
 ---
 
 ## Resumo
-Este repositório contém a resolução do **TPC1** proposto na aula teórica realizada no dia ____.  
+Este repositório contém a resolução do **TPC1** proposto na aula teórica realizada no dia 10/02/2025.  
 
 O objetivo deste trabalho foi construir um serviço em **Node.js** que consome uma API de dados servida pelo **json-server** da **Oficina de Reparações** e gera páginas web dinâmicas com as informações.  
 
