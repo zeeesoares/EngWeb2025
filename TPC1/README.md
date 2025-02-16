@@ -1,31 +1,54 @@
 # Oficina de Reparações
 
 ## Autor
-- **Nome:** José António Costa Soares
-- **Número de Aluno:** A103995
-- **Foto:**
+- **Nome:** José António Costa Soares  
+- **Número de Aluno:** A103995  
+- **Foto:**  
 
-![José Soares](../images/josesoares.jpg)  
+  ![José Soares](../images/josesoares.jpg)  
 
+---
 
 ## Resumo
-Nesta diretoria encontra-se a resolução do TPC1 proposto na aula teórica realizada no dia _____.  
+Este repositório contém a resolução do **TPC1** proposto na aula teórica realizada no dia ____.  
 
-O objetivo deste TPC era construir um serviço em nodejs, que consuma a API de dados servida pelo json-server da oficina de reparações e responda com as páginas web do site.
+O objetivo deste trabalho foi construir um serviço em **Node.js** que consome uma API de dados servida pelo **json-server** da **Oficina de Reparações** e gera páginas web dinâmicas com as informações.  
 
-Para que o objetivo fosse concluído foram necessários alguns passos como:
-- Preparação do dataset para o formato json-server
-- Interligação e criação do servidor com o json-server e a dita API
-- Construir/Gerar HTML de suporte à pagina.
+Para isso, foram realizados os seguintes passos:
+- **Preparação do dataset** no formato adequado para o `json-server`
+- **Criação e configuração do servidor** em Node.js para interligação com a API
+- **Construção dinâmica das páginas HTML** para apresentação das informações
 
 
 ### Implementação
+A solução foi implementada utilizando **JavaScript (Node.js)** e **Python**, dividindo o problema em duas grandes partes:
 
-A resolução foi realizada em JavaScript e Python, dividindo o problema em duas partes principais:
+#### 1. Geração do Dataset (`data.json`)
+A base de dados foi criada e estruturada para ser utilizada pelo `json-server`.  
+O dataset contém informações sobre:
+- **Reparações**
+- **Intervenções**
+- **Viaturas**
 
-#### Geração do Novo Dataset
+#### 2. Construção da API e Servidor Web
+O **servidor web** em **Node.js** é responsável por:
+- Consumir os dados da API (`json-server`)
+- Processar e organizar as informações
+- Gerar **páginas HTML** para exibição no browser  
 
-#### Contrução da API
+A API expõe os seguintes endpoints principais:
+- `/` → Página inicial  
+- `/reparacoes` → Lista de reparações registadas  
+- `/intervencoes` → Lista de intervenções realizadas  
+- `/viaturas` → Lista de todas as viaturas  
+- `/viaturas/marcas` → Lista de viaturas agrupadas por marca  
 
-## Lista de Resultados
+---
 
+## Resultados
+
+**Ficheiros:**  
+- [`dataset.json`](./dataset.json) → Contém o dataset utilizado pelo `json-server`  
+- [`generate_data.py`](./dataset/gen_reparacoes_dataset.py) → Script Python que gera o dataset  
+- [`main.js`](./main.js) → Servidor principal que interage com o `json-server`  
+- [`views.js`](./views.js) → Manipulação dinâmica do HTML 
