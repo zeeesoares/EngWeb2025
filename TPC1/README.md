@@ -12,19 +12,19 @@
 ## Resumo
 Este repositório contém a resolução do **TPC1** proposto na aula teórica realizada no dia 10/02/2025.  
 
-O objetivo deste trabalho foi construir um serviço em **Node.js** que consome uma API de dados servida pelo **json-server** da **Oficina de Reparações** e gera páginas web dinâmicas com as informações.  
+O objetivo deste trabalho foi construir um serviço em **Node.js** que consome uma API de dados servida pelo **json-server** da **Oficina de Reparações** e gera páginas web com as informações.  
 
-Para isso, foram realizados os seguintes passos:
+Para isso, realizei os seguintes passos:
 - **Preparação do dataset** no formato adequado para o `json-server`
 - **Criação e configuração do servidor** em Node.js para interligação com a API
 - **Construção dinâmica das páginas HTML** para apresentação das informações
 
 
 ### Implementação
-A solução foi implementada utilizando **JavaScript (Node.js)** e **Python**, dividindo o problema em duas grandes partes:
+A solução foi implementada com **JavaScript (Node.js)** e **Python**, uma vez que o problema está dividido em duas grandes partes:
 
 #### 1. Geração do Dataset (`data.json`)
-A base de dados foi criada e estruturada para ser utilizada pelo `json-server`.  
+A base de dados criada e estruturada para ser utilizada pelo `json-server`.  
 O dataset contém informações sobre:
 - **Reparações**
 - **Intervenções**
