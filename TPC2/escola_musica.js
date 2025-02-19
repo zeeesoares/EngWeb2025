@@ -70,6 +70,21 @@ http.createServer((req,res) => {
                 res.write("<p>" + err + "</p>")
                 res.end()
             })
+        }else if (req.url.match(/cursos\/.+/)) {
+            var id = req.url.split("/")[2]
+            axios.get(`http://localhost:3000/alunos?curso=${id}`)
+            .then(resp => {
+                res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8' })
+                var aluno = resp.data;
+                res.write(pages.genAlunosPage(aluno,date))
+                res.end()
+            })
+            .catch(err => {
+                res.writeHead(404,{ 'Content-Type': 'text/html;charset=utf-8' })
+                console.log("Erro: " + err)
+                res.write("<p>" + err + "</p>")
+                res.end()
+            })
         }
         else if (req.url == '/instrumentos') {
             axios.get('http://localhost:3000/instrumentos')
@@ -77,6 +92,22 @@ http.createServer((req,res) => {
                 res.writeHead(200,{ 'Content-Type': 'text/html;charset=utf-8' })
                 var instrumentos = resp.data
                 res.write(pages.genInstrumentosPage(instrumentos,date))
+                res.end()
+            })
+            .catch(err => {
+                res.writeHead(404,{ 'Content-Type': 'text/html;charset=utf-8' })
+                console.log("Erro: " + err)
+                res.write("<p>" + err + "</p>")
+                res.end()
+            })
+        }
+        else if (req.url.match(/instrumentos\/.+/)) {
+            var id = req.url.split("/")[2]
+            axios.get(`http://localhost:3000/alunos?instrumento=${id}`)
+            .then(resp => {
+                res.writeHead(200, {'Content-Type': 'text/html;charset=utf-8' })
+                var aluno = resp.data;
+                res.write(pages.genAlunosPage(aluno,date))
                 res.end()
             })
             .catch(err => {

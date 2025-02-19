@@ -153,7 +153,7 @@ export function genCursosPage(cursos,date) {
         var i = 0
         pageHTML += `
                         <tr>
-                            <td> ${c.id}
+                            <td> <a href="/cursos/${c.id}">${c.id}</a>
                             <td> ${c.designacao}
                         </tr>
                         `
@@ -200,8 +200,8 @@ export function genInstrumentosPage(instrumentos,date) {
         var i = 0
         pageHTML += `
                         <tr>
-                            <td> ${ins.id}
-                            <td> ${ins["#text"]}
+                            <td> ${ins.id}</a>
+                            <td><a href="/instrumentos/${ins["#text"]}"> ${ins["#text"]}</a>
                         </tr>
                         `
         i+=1
