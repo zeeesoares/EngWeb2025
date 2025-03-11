@@ -36,8 +36,8 @@ A API expõe os seguintes endpoints principais:
 
 
 Tem também suporte aos metodos REST:
-- `/alunos/edit/:id` 
-- `/alunos/delete/:id` 
+- `/filmes/edit/:id` 
+- `/filmes/delete/:id` 
 
 ---
 
