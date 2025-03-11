@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-red
+      h1= title
+    main.w3-container
+      h2 Dados da UC
+      ul.w3-ul
+        li Docente: #{docente}
+        li Instituição: #{instituicao}
+        li Curso: #{curso}
+
+      .w3-container
+      h2 App Cinematografia 
+      ul.w3-ul 
+        li 
+          a(href="/filmes") Lista de Filmes
+
+
+    footer.w3-container.w3-red
+      address Generater by EngWeb2015 class

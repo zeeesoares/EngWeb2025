@@ -1,0 +1,35 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-red.w3-margin-bottom
+            h1= title
+        .w3-container
+            table.w3-table-all        
+                tr
+                    th(style="width:10%") Ano
+                    th(style="width:15%") Título
+                    th(style="width:45%") Elenco 
+                    th(style="width:15%") Géneros
+                    th(style="width:5%") Edit/Delete
+                each filme in lista
+                    tr
+                        td= filme.year
+                        td.w3-cursor(style="color: red")
+                            a(href=`/filmes/${filme.id}`) #{filme.title}
+                        td
+                            ul.w3-ul
+                                each person in filme.cast 
+                                    li= person
+                        td
+                            ul.w3-ul
+                                each genre in filme.genres
+                                    li= genre
+                        td 
+                            p 
+                                a(href=`/filmes/edit/${filme.id}`) Edit
+                            p 
+                                a(href=`/filmes/delete/${filme.id}`) Delete
+
+        footer.w3-container.w3-red.w3-margin-top
+          address Generater by EngWeb2015 class

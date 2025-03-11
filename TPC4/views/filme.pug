@@ -1,0 +1,32 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-red.w3-margin-bottom
+            h1= title
+            a(href="/filmes")
+                h3 Voltar
+        .w3-container
+            table.w3-table-all        
+                tr
+                    th Título
+                    th Ano
+                    th Elenco 
+                    th Géneros
+
+                tr
+                    td= filme.year
+                    td
+                        a(href="/filmes") 
+                            filme.title
+                    td
+                        ul.w3-ul
+                            each person in filme.cast 
+                                li= person
+                    td
+                        ul.w3-ul
+                            each genre in filme.genres
+                                li= genre
+
+        footer.w3-container.w3-red.w3-margin-top
+          address Generater by EngWeb2015 class
