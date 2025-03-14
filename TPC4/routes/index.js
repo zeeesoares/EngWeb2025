@@ -53,6 +53,32 @@ router.get('/filmes/edit/:id', function(req, res) {
     });
 });
 
+router.get('/autor/:nome', function(req, res) {
+  axios.get('http://localhost:3000/filmes')
+    .then(resp => {
+      const filmesEncontrados = [];
+
+      for (let filme of resp.data) {
+        for (let person of filme.cast) {
+          if (person === req.params.nome) {
+            filmesEncontrados.push(filme);
+            break;
+          }
+        }
+      }
+      
+      res.render('autor', { 
+        title: req.params.nome,
+        filmes: filmesEncontrados
+      });
+    })
+    .catch(erro => {
+      console.log(erro);
+      res.render('error', { error: erro });
+    });
+});
+
+
 router.get('/filmes/delete/:id', function(req, res) {
   axios.delete('http://localhost:3000/filmes/' + req.params.id)
     .then(resp => {

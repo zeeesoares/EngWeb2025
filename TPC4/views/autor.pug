@@ -1,0 +1,17 @@
+extends layout 
+
+block content 
+    .w3-card-4 
+        header.w3-container.w3-red.w3-margin-bottom
+            h1 Filmes de #{title}
+            a(href="/filmes")
+                h3 Voltar
+        .w3-container
+            h2 Lista de filmes
+            ul.w3-ul
+                each filme in filmes 
+                    li= filme.title
+                               
+
+        footer.w3-container.w3-red.w3-margin-top
+          address Generater by EngWeb2015 class

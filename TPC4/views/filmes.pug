@@ -20,7 +20,8 @@ block content
                         td
                             ul.w3-ul
                                 each person in filme.cast 
-                                    li= person
+                                    a(href=`/autor/${person}`)
+                                        li= person
                         td
                             ul.w3-ul
                                 each genre in filme.genres
