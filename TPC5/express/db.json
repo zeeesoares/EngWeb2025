@@ -1,0 +1,54 @@
+{
+  "alunos": [
+    {
+      "id": "A100893",
+      "nome": "Luís de Castro Rodrigues Caetano",
+      "git": "https://github.com/056zedelta/EngWeb2024.git"
+    },
+    {
+      "id": "A100701",
+      "nome": "Pedro Duarte Nobre Viana",
+      "git": "https://github.com/dvianaa/EngWeb2024"
+    },
+    {
+      "id": "A100758",
+      "nome": "Hugo Arantes Dias",
+      "git": "https://github.com/hugodiasUM/EngWeb2024/tree/main"
+    },
+    {
+      "id": "A100759",
+      "nome": " Pedro Afonso Moreira Lopes",
+      "git": " https://github.com/LerdoPopes/EngWeb2024/tree/main/TPC1"
+    },
+    {
+      "id": "A94015",
+      "nome": "João Daniel da Silva Carvalho",
+      "git": "https://github.com/joodanic/EngWeb2024"
+    },
+    {
+      "id": "A95345",
+      "nome": "Eduardo Miguel Pacheco Silva",
+      "git": "https://github.com/dud4s/EngWeb2024"
+    },
+    {
+      "id": "A103995",
+      "nome": "José António Costa Soares",
+      "git": "https://github.com/zeeesoares/EngWeb2025"
+    },
+    {
+      "id": "A104181",
+      "nome": "Rodrigo Gaifar Lima",
+      "git": "https://github.com/RodrimLima19/EngWeb2025",
+      "tpc1": "1",
+      "tpc2": "1"
+    },
+    {
+      "id": "A104095",
+      "nome": "Rafael Airosa Pereira",
+      "git": "https://github.com/Leafar16/EngWeb2025",
+      "tpc1": "1",
+      "tpc2": "1",
+      "tpc3": "1"
+    }
+  ]
+}
