@@ -1,0 +1,25 @@
+extends layout 
+
+block content 
+    .w3-card-4
+        header.w3-container.w3-red.w3-margin-bottom.w3-p
+            h1 Contrato - #{contrato._id }
+            p
+                a(href=`/`) Voltar
+        .w3-container 
+            ul 
+                - if (contrato.nAnuncio !== "") 
+                    li 
+                        b Anuncio: 
+                            #{contrato.nAnuncio}
+                li Tipo de Procedimento: #{contrato.tipoprocedimento}
+                li Objeto Contrato: #{contrato.objectoContrato}
+                li Data de Publicacao: #{contrato.dataPublicacao}
+                li Data de Celebracao de Contrato: #{contrato.dataCelebracaoContrato}
+                li Preco Contratual #{contrato.precoContratual}
+                li Prazo Execucao: #{contrato.prazoExecucao}
+                li NIPC Entidade Comunicante: #{contrato.NIPC_entidade_comunicante}
+                li Entidade Comunicante: #{contrato.entidade_comunicante}
+                li Fundamentacao: #{contrato.fundamentacao}
+                                  
+                        
