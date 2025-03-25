@@ -71,17 +71,17 @@ A API de dados expõe os seguintes médodos:
 
 #### 2. Construção da Interface
 
-- No browser, o endereço  http://localhost:16001 deverá conter a página principal constituída por:
+- No browser, o endereço  http://localhost:16001 contém a página principal constituída por:
   - Um cabeçalho com metainformação à tua escolha;
   - Uma tabela contendo a lista de registos, um por linha, com os campos: idcontrato,objectoContrato, dataCelebracaoContrato, precoContratual,NIPC_entidade_comunicante, entidade_comunicante;
-  - O campo idcontrato deverá ser um link para a página do contrato com esse identificador;
-  - O campo NIPC_entidade_comunicante deverá ser um link para a página dessa entidade.
+  - O campo idcontrato é um link para a página do contrato com esse identificador;
+  - O campo NIPC_entidade_comunicante é um link para a página dessa entidade.
 
-- No browser, o endereço http://localhost:16001/:id deverá conter a página do contrato cujo identificador foi passado na rota:
-  - Esta página deverá conter todos os campos do contrato e um link para voltar à página principal.
+- No browser, o endereço http://localhost:16001/:id contém a página do contrato cujo identificador foi passado na rota:
+  - Esta página contém todos os campos do contrato e um link para voltar à página principal.
 
-- No browser, o endereço http://localhost:16001/entidades/:nipc deverá conter a página da entidade cujo NIPC_entidade_comunicante corresponde ao parâmetro passado na rota :
-  - Na página de cada entidade deverá constar este identificador e o respetivo nome da entidade;
+- No browser, o endereço http://localhost:16001/entidades/:nipc contém a página da entidade cujo NIPC_entidade_comunicante corresponde ao parâmetro passado na rota :
+  - Na página de cada entidade consta este identificador e o respetivo nome da entidade;
   - Uma tabela com a lista de contratos dessa entidade (tabela com estrutura semelhante à da página principal);
   - O somatório do valor dos contratos;
   - E um link para voltar à página principal.
