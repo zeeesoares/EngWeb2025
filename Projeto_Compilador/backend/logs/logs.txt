@@ -84,3 +84,5 @@
 2025-06-01T20:45:23.470Z - Utilizador: user | Ação: login | Detalhes: Login efetuado com sucesso
 2025-06-01T20:55:48.315Z - Utilizador: diogo | Ação: registo | Detalhes: Novo utilizador registado (diogo)
 2025-06-01T20:55:53.270Z - Utilizador: diogo | Ação: login | Detalhes: Login efetuado com sucesso
+2025-06-01T20:57:41.280Z - Utilizador: zeee | Ação: login | Detalhes: Login efetuado com sucesso
+2025-06-01T20:57:54.225Z - Utilizador: admin | Ação: login | Detalhes: Login efetuado com sucesso
